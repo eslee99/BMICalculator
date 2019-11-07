@@ -19,6 +19,14 @@ class MainActivity : AppCompatActivity() {
         }
     }
     private fun calculateBMI() {
+        if(editHeight.text.isEmpty()){
+            editHeight.setError(getString(R.string.require))
+            return
+        }
+        if(editWeight.text.isBlank()){
+            editHeight.setError(getString(R.string.require))
+            return
+        }
         val height=editHeight.text.toString().toFloat()
         val weight=editWeight.text.toString().toFloat()
         val bmi=weight /(height*height)

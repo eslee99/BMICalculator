@@ -9,4 +9,5 @@
     <string name="overWeight">Over Weight</string>
     <string name="category">Category</string>
     <string name="reset">Reset</string>
+    <string name="require">Input Required</string>
 </resources>
